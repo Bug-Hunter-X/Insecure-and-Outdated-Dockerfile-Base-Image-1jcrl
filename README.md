@@ -1,0 +1,3 @@
+This repository demonstrates a common mistake in Dockerfiles: using an outdated base image and not specifying a Python version.  The original `Dockerfile` uses `ubuntu:latest`, which is prone to changes and security vulnerabilities. It also relies on the system's default Python installation, leading to potential conflicts.
+
+The `Dockerfile.fixed` provides a solution by using a specific, smaller, and more secure base image with a clearly specified Python version. This ensures consistency and improves security.
